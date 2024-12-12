@@ -1,7 +1,11 @@
 import React from "react";
 import SideNav from "../ui/dashboard/sidenav";
 
-const Layout: React.FC<React.ReactNode> = ({ children }) => {
+type LayoutProps = {
+  children: React.ReactNode;
+};
+
+const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <div className="flex h-screen flex-col md:flex-row md:overflow-hidden">
       <div className="w-full flex-none md:w-64">
